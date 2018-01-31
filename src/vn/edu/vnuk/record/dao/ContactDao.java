@@ -9,14 +9,15 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+import vn.edu.vnuk.record.jdbc.ConnectionFactory;
 import vn.edu.vnuk.record.model.Contact;
 
 public class ContactDao {
 	
     private Connection connection;
 
-    public ContactDao(Connection connection){
-            this.connection = connection;
+    public ContactDao(){
+        this.connection = new ConnectionFactory().getConnection();
     }
 
 
