@@ -1,3 +1,3 @@
 <html>
-	Your age is ${param.age}.
+	<span>Your age is ${param.age}.</span>
 </html>
