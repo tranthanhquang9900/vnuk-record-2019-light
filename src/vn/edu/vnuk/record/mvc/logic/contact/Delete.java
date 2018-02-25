@@ -5,8 +5,6 @@
  */
 package vn.edu.vnuk.record.mvc.logic.contact;
 
-import java.sql.Connection;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -26,9 +24,10 @@ public class Delete implements Logic {
         Long id = Long.parseLong(request.getParameter("id"));
         Contact contact = new Contact();
         contact.setId(id);
-        Connection connection = (Connection) request.getAttribute("myConnection");
+        //Connection connection = (Connection) request.getAttribute("myConnection");
         //ContactDao dao = new ContactDao(connection);
-        //dao.delete(contact);
+        ContactDao dao = new ContactDao();
+        dao.delete(contact);
         System.out.println("Deleting contact ... ");
         return "mvc?logic=contact.Index";
         
