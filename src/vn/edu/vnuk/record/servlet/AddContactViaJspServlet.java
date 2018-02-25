@@ -69,8 +69,9 @@ public class AddContactViaJspServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-		RequestDispatcher rd = request.getRequestDispatcher("/mvc?logic=contact.Index");
-                rd.forward(request,response);
+		// RequestDispatcher rd = request.getRequestDispatcher("/mvc?logic=contact.Index");
+		RequestDispatcher rd = request.getRequestDispatcher("/contact-added.jsp");
+        rd.forward(request,response);
 		
 	}
 	
