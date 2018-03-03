@@ -23,9 +23,13 @@
 					</td>
 					
 					<td>${contact.address}</td>
+					
 					<td>
-						<fmt:formatDate value="${contact.dateOfBirth.time}"
-pattern="dd/MM/yyyy" />
+						<fmt:formatDate value="${contact.dateOfBirth.time}" pattern="dd/MM/yyyy" />
+					</td>
+					
+					<td>
+						<a href="mvc?logic=contact.Delete&id=${contact.id}">Delete</a>
 					</td>
 				</tr>
 			</c:forEach>

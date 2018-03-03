@@ -23,7 +23,8 @@ public class Index implements Logic {
     	//request.setAttribute("contacts", new ContactDao((Connection) request.getAttribute("myConnection")).read());
     	request.setAttribute("contacts", new ContactDao().read());
         
-        return "/WEB-INF/jsp/contact/index.jsp";
+        //return "/WEB-INF/jsp/contact/index.jsp";
+    	return "read-contacts.jsp";
     }
     
 }

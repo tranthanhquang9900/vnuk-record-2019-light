@@ -29,7 +29,8 @@ public class Delete implements Logic {
         ContactDao dao = new ContactDao();
         dao.delete(contact);
         System.out.println("Deleting contact ... ");
-        return "mvc?logic=contact.Index";
+        //return "mvc?logic=contact.Index";
+        return "read-contacts.jsp";
         
     }
     
