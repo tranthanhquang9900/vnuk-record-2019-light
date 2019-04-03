@@ -4,3 +4,9 @@ body {
 	background-color: #111;
 	color: #777;
 }
+
+
+a, a:visited {
+	color: #787;
+	text-decoration: none;
+}
