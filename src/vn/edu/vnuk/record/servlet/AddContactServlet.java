@@ -28,8 +28,14 @@ public class AddContactServlet extends HttpServlet {
 			HttpServletResponse response)
 			throws IOException, ServletException {
 		
+		request.setCharacterEncoding ("UTF-8");
+	    response.setCharacterEncoding ("UTF-8");
+	    response.setContentType ("text / html; charset = UTF-8");
+	    
+		
 		//	seeking writer
 		PrintWriter out = response.getWriter();
+		
 		
 		//	finding parameters in the request form
 		String name = request.getParameter("name");
