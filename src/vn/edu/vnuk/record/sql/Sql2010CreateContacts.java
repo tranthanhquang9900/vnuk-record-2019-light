@@ -16,7 +16,7 @@ public class Sql2010CreateContacts {
 				+ 	"email VARCHAR(255) NOT NULL, "
 				+ 	"address VARCHAR(255) NOT NULL, "
 				+ 	"date_of_birth DATE NOT NULL"
-				+ ");"
+				+ ") CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
 			;
 	}
 	

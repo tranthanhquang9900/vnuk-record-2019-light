@@ -24,7 +24,7 @@ public class Sql0000RunAllQueries {
 		//	Create tables 
 		
 		Connection connectionTable = new ConnectionFactory()
-				.getConnection("jdbc:mysql://localhost/vnuk");
+				.getConnection();
 		
 		new Sql2010CreateContacts(connectionTable).run();
 		
